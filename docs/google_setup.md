@@ -53,7 +53,7 @@ Then your client_id and client_secrets are generated as shown in the image
 <img width="1074" alt="client_id_secrets" src="https://user-images.githubusercontent.com/32665021/116368742-5641df00-a811-11eb-86a2-4a14260d48fc.png">
 
 
-Add these details to your release.exs
+#### Add these details to your release.exs
 
 config :ueberauth, Ueberauth,
   providers: [
@@ -61,5 +61,6 @@ config :ueberauth, Ueberauth,
   ]
 
 config :ueberauth, Ueberauth.Strategy.Google.OAuth,
+
   client_id: "client_id_generated_above",
   client_secret: "client_secrets_generated_above"
